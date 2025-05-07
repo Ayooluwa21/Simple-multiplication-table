@@ -7,19 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-    <label for="">Starting point: </label>
-    <input id="start" type="number">
-    <label for="">Ending point: </label>
-    <input id="end" type="number">
-    <label for="">Rows: </label>
-    <input id="row" type="number">
-    <br>
-    <br>
-    <button class="btn btn-danger" onclick="showTable()">Display Table</button>
-    <br>
-    <br>
+    <div class="container mx-auto p-3">
+        <label for="">Starting from: </label>
+        <input id="start" type="number">
+        <label for="">Ending at: </label>
+        <input id="end" type="number">
+        <label for="">How many rows: </label>
+        <input id="row" type="number">
+        <br>
+        <br>
+        <button class="btn btn-danger" onclick="showTable()">Display Table</button>
+        <br>
+        <br>
+    </div>
 
-    <table class="table table-striped">
+    <table>
         <tr id="display-table">
             <td>
                 <table>
@@ -30,5 +32,7 @@
             </td>
         </tr>
     </table>
+
+    <script src="./multiplicationTable.js"></script>
 </body>
 </html>
